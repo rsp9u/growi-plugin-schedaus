@@ -5,11 +5,10 @@ export class SchedausPreProcessor {
   }
 
   replaceToSchedaus(match) {
-    const content = match.replace(/^@(start|end)gantt$/gm, '');
-    console.log(content)
+    const content = match.replace(/^@(start|end)gantt.*$/gm, '');
+    const server = match.match(/^@startgantt:(.*)$/m)[1];
     const b64content = btoa(content);
-    const url = `http://192.168.63.9:5000/sch/svg/${b64content}`;
-    console.log(url);
+    const url = `http://${server}/sch/svg/${b64content}`;
     return `![gantt-chart](${url})`;
   }
 
