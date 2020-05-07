@@ -1,0 +1,29 @@
+{
+  "name": "growi-plugin-schedaus",
+  "version": "1.0.0",
+  "description": "GROWI plugin to use a gantt chart tool",
+  "keywords": [
+    "growi",
+    "growi-plugin"
+  ],
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "lint:fix": "eslint **/*.{js,jsx} --fix",
+    "lint": "eslint **/*.{js,jsx}"
+  },
+  "repository": "https://github.com/rsp9u/growi-plugin-schedaus.git",
+  "author": "rsp9u",
+  "license": "MIT",
+  "dependencies": {
+    "growi-commons": "^4.0.8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.1",
+    "eslint-config-weseek": "^1.0.1",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}
