@@ -1,8 +1,6 @@
-import SchedausPreProcessInterceptor from './client/js/util/Interceptor/SchedausPreProcessInterceptor';
+import { SchedausPreProcessor } from './client/js/util/PreProcessor/SchedausPreProcessor';
 
 export default (appContainer) => {
-  // add interceptors
-  appContainer.interceptorManager.addInterceptors([
-    new SchedausPreProcessInterceptor(),
-  ]);
+ // add preprocessor to head of array
+  appContainer.originRenderer.preProcessors.unshift(new SchedausPreProcessor());
 };
