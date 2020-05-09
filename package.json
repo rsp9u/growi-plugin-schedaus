@@ -18,7 +18,9 @@
   "author": "rsp9u",
   "license": "MIT",
   "dependencies": {
-    "js-base64": "^2.5.2"
+    "axios": "^0.19.2",
+    "js-base64": "^2.5.2",
+    "js-cookie": "^2.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
