@@ -15,7 +15,7 @@ export class SchedausPreProcessor {
       const b64content = Base64.encodeURI(content);
       const server = Cookies.get('schedaus_uri');
       if (server === undefined) {
-        return "Please set 'SCHEDAUS_URI'";
+        return "Please set 'SCHEDAUS_URI' environment variable to the Growi app server";
       } else {
         const client_id = `${this.random_id}+${count}`;
         const url = `${server}/sch/svg/${b64content}?client_id=${client_id}`;
