@@ -1,6 +1,6 @@
 {
   "name": "growi-plugin-schedaus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GROWI plugin to use a gantt chart tool",
   "keywords": [
     "growi",
